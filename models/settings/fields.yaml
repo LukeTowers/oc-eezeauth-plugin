@@ -1,0 +1,33 @@
+# ===================================
+#  Settings Field Definitions
+# ===================================
+
+fields:
+
+    help:
+        type: partial
+        stretch: true
+        span: right
+
+    hide_login:
+        label: luketowers.eezeauth::lang.settings.hide_login
+        type: switch
+        span: left
+        default: true
+        on: YES
+        off: NO
+
+    client_id:
+        label: luketowers.eezeauth::lang.settings.client_id
+        span: left
+        required: true
+
+    client_secret:
+        label: luketowers.eezeauth::lang.settings.client_secret
+        span: left
+        required: true
+
+    role_id:
+        label: luketowers.eezeauth::lang.settings.role_id
+        type: dropdown
+        span: left

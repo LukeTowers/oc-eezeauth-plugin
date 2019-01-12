@@ -1,0 +1,16 @@
+<div id="eeze-auth-container">
+    <a href="https://eeze.io/login" target="_blank">
+        <img src=" {{ '/plugins/luketowers/eezeauth/assets/images/logo.png' | app }}" alt="eeze logo"/>
+        <span>Login with Eeze</span>
+    </a>
+
+    {{ form_open({id: 'eeze-form', method: 'post', url: url}) }}
+        <script id="eeze" src="https://eeze.io/public/js/eeze.js" data-key="{{ client_id }}"></script>
+    {{ form_close() }}
+</div>
+{% if hide_login %}
+    <style>
+        .outer-form-container > *:first-child { display: none !important; }
+        .outer-form-container > form:first-of-type { display: none !important; }
+    </style>
+{% endif %}

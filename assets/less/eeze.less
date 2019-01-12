@@ -1,0 +1,64 @@
+.outer-form-container {
+    #eeze-auth-container {
+        > a {
+            display: block;
+            text-align: center;
+            text-decoration: none !important;
+            padding-bottom: 1em;
+            img {
+                display: inline-block;
+                height: 110px;
+                width: auto;
+                margin: 0 -1.5em;
+            }
+            span {
+                color: #FFF;
+                display: inline-block;
+                font-size: 1.2em;
+            }
+        }
+    }
+
+    #eeze-form {
+        text-align: center;
+
+        #qrcodeCanvas {
+            display: inline-block;
+            padding: 1em;
+            background: #FFF;
+
+            canvas {
+                display: block;
+            }
+        }
+
+        .eeze-spinner-container + .eeze-spinner-container ~ #qrcodeCanvas {
+            display: none;
+        }
+    }
+}
+
+
+svg#eeze-spinner {
+    display: block;
+    margin: 0 auto;
+}
+
+p#eeze-msg {
+    width: 25% !important;
+    font-family: sans-serif;
+    margin: 0;
+    color: #FFF;
+}
+
+form#eeze-form {
+    position: relative;
+}
+
+svg#eeze-spinner {
+    z-index: 2;
+}
+
+.eeze-spinner-container.text-center {
+    z-index: 2;
+}
