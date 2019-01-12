@@ -14,3 +14,4 @@ To install it with Composer, run `composer require luketowers/oc-eezeauth-plugin
 
 # Documentation
 
+Simply follow the instructions on the plugin's settings page!
