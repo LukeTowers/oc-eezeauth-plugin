@@ -1,3 +1,5 @@
+>**NOTE:** eeze.io appears to no longer be functional so this repo is being archived.
+
 # About
 
 Provides an easy integration with the eeze.io authentication provider.
